@@ -107,5 +107,16 @@ public class Movers extends Actor
             removeTouching(SpeedBoost.class);
         }
     }
+    public boolean hitEnemy()
+    {
+        if( isTouching(Enemies.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 

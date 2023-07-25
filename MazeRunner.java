@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MazeRunner extends Movers
+public class MazeRunner extends Players
 {
     /**
      * Act - do whatever the MazeRunner wants to do. This method is called whenever
@@ -22,5 +22,13 @@ public class MazeRunner extends Movers
       slideAround();
       collectBoost();
       maxSpeed();
+      mazeRunnerHit();
+    }
+    public void mazeRunnerHit()
+    {
+        if(hitEnemy())
+        {
+            setLocation(40,560);
+        }
     }
 }

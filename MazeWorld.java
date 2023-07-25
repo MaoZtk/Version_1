@@ -156,5 +156,14 @@ public class MazeWorld extends World
         addObject(enemyflyer2,240,291);
         Enemyflyer enemyflyer3 = new Enemyflyer();
         addObject(enemyflyer3,554,498);
+
+        EnemyWalker enemyWalker = new EnemyWalker(false);
+        addObject(enemyWalker,95,199);
+        EnemyWalker enemyWalker2 = new EnemyWalker(false);
+        addObject(enemyWalker2,356,407);
+        EnemyWalker enemyWalker3 = new EnemyWalker(false);
+        addObject(enemyWalker3,150,49);
+        EnemyWalker enemyWalker4 = new EnemyWalker(false);
+        addObject(enemyWalker4,22,404);
     }
 }
