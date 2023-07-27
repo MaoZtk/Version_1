@@ -22,8 +22,14 @@ public class EnemyWalker extends Enemies
     public void act()
     {
         moveAround();
-
-    
+        enemyHitWalls();
+    }
+    public void enemyHitWalls()
+    {
+       if (hitWalls() || isAtEdge())
+       {
+           speed = -speed;
+       }
     }
     private void moveAround()
     {

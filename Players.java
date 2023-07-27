@@ -16,4 +16,13 @@ public class Players extends Movers
     {
         // Add your action code here.
     }
+    public void YouWin()
+    {
+        if(isTouching(YouWinPlatform.class))
+        {
+            getWorld().addObject(new YouWinScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+            
+            
+        }
+    }
 }

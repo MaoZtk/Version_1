@@ -126,7 +126,7 @@ public class MazeWorld extends World
         addObject(mazeBlock48,10*50,9*50);
         MazeBlock mazeBlock49 = new MazeBlock();
         addObject(mazeBlock49,11*50,11*50);
-        MazeRunner mazeRunner = new MazeRunner();
+        MazeRunner mazeRunner = new MazeRunner(3);
         addObject(mazeRunner,48,564);
         MazeBlock mazeBlock50 = new MazeBlock();
         addObject(mazeBlock50,298,578);
@@ -165,5 +165,43 @@ public class MazeWorld extends World
         addObject(enemyWalker3,150,49);
         EnemyWalker enemyWalker4 = new EnemyWalker(false);
         addObject(enemyWalker4,22,404);
+        enemyWalker4.setLocation(344,304);
+        enemyWalker2.setLocation(48,411);
+        MazeBlock mazeBlock54 = new MazeBlock();
+        addObject(mazeBlock54,4,399);
+        mazeBlock36.setLocation(446,579);
+        MazeBlock mazeBlock55 = new MazeBlock();
+        addObject(mazeBlock55,446,579);
+        MazeBlock mazeBlock56 = new MazeBlock();
+        addObject(mazeBlock56,145,590);
+        MazeBlock mazeBlock57 = new MazeBlock();
+        addObject(mazeBlock57,193,591);
+        MazeBlock mazeBlock58 = new MazeBlock();
+        addObject(mazeBlock58,2,598);
+        YouWinPlatform youWinPlatform = new YouWinPlatform();
+        addObject(youWinPlatform,550,27);
+        removeObject(youWinPlatform);
+
+        YouWinPlatform youWinPlatform2 = new YouWinPlatform();
+        addObject(youWinPlatform2,537,35);
+        mazeRunner.setLocation(53,516);
+        mazeRunner.setLocation(0,511);
+        mazeBlock7.setLocation(58,506);
+        MazeBlock mazeBlock59 = new MazeBlock();
+        addObject(mazeBlock59,50,594);
+        MazeBlock mazeBlock60 = new MazeBlock();
+        addObject(mazeBlock60,598,148);
+        MazeBlock mazeBlock61 = new MazeBlock();
+        addObject(mazeBlock61,598,197);
+        MazeBlock mazeBlock62 = new MazeBlock();
+        addObject(mazeBlock62,596,246);
+        MazeBlock mazeBlock63 = new MazeBlock();
+        addObject(mazeBlock63,597,279);
+        MazeBlock mazeBlock64 = new MazeBlock();
+        addObject(mazeBlock64,595,314);
+        MazeBlock mazeBlock65 = new MazeBlock();
+        addObject(mazeBlock65,593,347);
+        removeObject(mazeBlock7);
+        mazeRunner.setLocation(52,540);
     }
 }
