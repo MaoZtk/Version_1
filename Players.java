@@ -14,7 +14,7 @@ public class Players extends Movers
      */
     public void act()
     {
-        // Add your action code here.
+        SecondLevel();
     }
     public void YouWin()
     {
@@ -23,6 +23,14 @@ public class Players extends Movers
             getWorld().addObject(new YouWinScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
             
             
+        }
+    }
+    public void SecondLevel()
+    {
+        Actor secretDoor = getOneIntersectingObject(secretDoor.class);
+        if (secretDoor!=null)
+        {
+            Greenfoot.setWorld(new MazeWorld());
         }
     }
 }

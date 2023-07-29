@@ -10,10 +10,6 @@ public class EnemyWalker extends Enemies
 {
     boolean upDown;
     int speed= 2;
-    /**
-     * Act - do whatever the EnemyWalker wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public EnemyWalker(boolean upAndDown)
     {
         getImage().scale(getImage().getWidth()/2, getImage().getHeight()/2);
