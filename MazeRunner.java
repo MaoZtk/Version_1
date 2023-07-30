@@ -15,7 +15,7 @@ public class MazeRunner extends Players
     int mazeRunnerLives;
     public MazeRunner(int lives)
     {
-        getImage().scale(getImage().getWidth()/2, getImage().getHeight()/2);
+        getImage().scale(getImage().getWidth()/3, getImage().getHeight()/3);
         mazeRunnerLives = lives;
     }
     public void act()
