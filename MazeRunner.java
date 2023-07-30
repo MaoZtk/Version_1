@@ -48,6 +48,7 @@ public class MazeRunner extends Players
         if (mazeRunnerLives == 0)
         {
             getWorld().addObject(new YouLose(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+            ((MyWorld) getWorld()).detenerMusica();
             Greenfoot.stop();
         }
     }

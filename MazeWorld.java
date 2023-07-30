@@ -126,7 +126,7 @@ public class MazeWorld extends World
         addObject(mazeBlock48,10*50,9*50);
         MazeBlock mazeBlock49 = new MazeBlock();
         addObject(mazeBlock49,11*50,11*50);
-        MazeRunner mazeRunner = new MazeRunner(3);
+        MazeRunner mazeRunner = new MazeRunner(5);
         addObject(mazeRunner,48,564);
         MazeBlock mazeBlock50 = new MazeBlock();
         addObject(mazeBlock50,298,578);

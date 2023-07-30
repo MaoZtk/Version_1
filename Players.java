@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+  import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Players here.
@@ -14,15 +14,23 @@ public class Players extends Movers
      */
     public void act()
     {
-        // Add your action code here.
+        SecondLevel();
     }
     public void YouWin()
     {
         if(isTouching(YouWinPlatform.class))
         {
             getWorld().addObject(new YouWinScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+            ((MyWorld) getWorld()).detenerMusica();
             
-            
+        }
+    }
+    public void SecondLevel()
+    {
+        Actor secretDoor = getOneIntersectingObject(secretDoor.class);
+        if (secretDoor!=null)
+        {
+            Greenfoot.setWorld(new MazeWorld());
         }
     }
 }
