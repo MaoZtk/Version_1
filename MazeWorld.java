@@ -203,5 +203,33 @@ public class MazeWorld extends World
         addObject(mazeBlock65,593,347);
         removeObject(mazeBlock7);
         mazeRunner.setLocation(52,540);
+        enemyWalker4.setLocation(343,235);
+        enemyWalker4.setLocation(344,396);
+        mazeBlock36.setLocation(460,592);
+        removeObject(mazeBlock55);
+        removeObject(mazeBlock51);
+        mazeBlock36.setLocation(468,563);
+        mazeBlock36.setLocation(460,564);
+        removeObject(mazeBlock53);
+        mazeBlock36.setLocation(445,590);
+        mazeBlock50.setLocation(293,594);
+        mazeBlock13.setLocation(100,574);
+        removeObject(mazeBlock13);
+        mazeBlock52.setLocation(105,584);
+        mazeBlock56.setLocation(150,591);
+        mazeBlock56.setLocation(146,580);
+        mazeBlock57.setLocation(95,539);
+        mazeBlock52.setLocation(92,594);
+        mazeBlock56.setLocation(131,591);
+        mazeBlock57.setLocation(103,547);
+        mazeBlock56.setLocation(135,566);
+        mazeBlock50.setLocation(313,593);
+        mazeBlock57.setLocation(136,594);
+        mazeBlock57.setLocation(136,599);
+        mazeBlock57.setLocation(123,496);
+        mazeBlock56.setLocation(140,591);
+        mazeBlock57.setLocation(91,547);
+        mazeBlock50.setLocation(299,587);
+        mazeBlock36.setLocation(459,584);
     }
 }
