@@ -21,7 +21,6 @@ public class Players extends Movers
         if(isTouching(YouWinPlatform.class))
         {
             getWorld().addObject(new YouWinScreen(), getWorld().getWidth()/2, getWorld().getHeight()/2);
-            ((MyWorld) getWorld()).detenerMusica();
             
         }
     }

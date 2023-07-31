@@ -20,14 +20,19 @@ public class MazeRunner extends Players
     }
     public void act()
     {
-      slideAround();
-      collectBoost();
-      maxSpeed();
-      loseLife();
-      mazeRunnerHit();
-      YouWin();
-      YouLose();
-      
+        slideAround();
+        collectBoost();
+        maxSpeed();
+        loseLife();
+        mazeRunnerHit();
+        YouWin();
+        YouLose();
+        if (isTouching(SpeedBoost.class)) 
+        {
+            puntos++;
+            removeTouching(SpeedBoost.class);
+        }
+        getWorld().showText("Puntos: " + puntos, 50, 25);
     }
     public void mazeRunnerHit()
     {

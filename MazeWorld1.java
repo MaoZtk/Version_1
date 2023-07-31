@@ -13,7 +13,6 @@ public class MazeWorld1 extends World
      * Constructor for objects of class MazeWorld1.
      * 
      */
-    
     public MazeWorld1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.

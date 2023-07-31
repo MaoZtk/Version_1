@@ -28,6 +28,12 @@ public class MazeRunner1 extends Players
         mazeRunnerHit1();
         SecondLevel();
         youLose();
+        if (isTouching(SpeedBoost.class)) 
+        {
+            puntos++;
+            removeTouching(SpeedBoost.class);
+        }
+        getWorld().showText("Puntos: " + puntos, 50, 25);
     }
     public void mazeRunnerHit1()
     {

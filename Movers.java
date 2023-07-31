@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Movers extends Actor
 {
     int speed = 4;
+    int puntos = 0;
     /**
      * Act - do whatever the Movers wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -103,6 +104,7 @@ public class Movers extends Actor
     {
         if (isTouching(SpeedBoost.class))
         {
+            puntos++;
             speed++;
             removeTouching(SpeedBoost.class);
         }
